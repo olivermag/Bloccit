@@ -38,7 +38,9 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 # Use unicorn as the app server
 # gem 'unicorn'
-
+group :development do
+  gem "rails-erd"
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
