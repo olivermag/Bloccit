@@ -1,6 +1,6 @@
 Bloccit::Application.routes.draw do
 
-	resources :posts
+	resources :posts, :advertisement
 
 	get 'about' => 'welcome#about'
 
