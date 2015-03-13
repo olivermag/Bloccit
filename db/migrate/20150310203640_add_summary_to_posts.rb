@@ -1,6 +1,6 @@
 class AddSummaryToPosts < ActiveRecord::Migration
   def change
-    add_column :posts, :summary_id, :integer
-    add_index :posts, :summary_id
+    add_column :summaries, :post_id, :integer
+    add_index :summaries, :post_id
   end
 end
