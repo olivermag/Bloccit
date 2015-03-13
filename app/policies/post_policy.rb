@@ -1,14 +1,18 @@
 class PostPolicy < ApplicationPolicy
-	attr_reader :user, :record
+ class Scope	
+ 	    attr_reader :user, :scope
 
-	def initialize(user, record)
-    @user = user
-    @record = record
+    def initialize(user, scope)
+      @user = user
+      @scope = scope
+    end
+
+   def resolve
+      if user.admin?
+        scope.all
+      else
+        scope.where(user_id: user.id)
+       end
   end
-
-  def index?
-    user.present? && (record.user == user)
-  end
-
- 
+end
 end
