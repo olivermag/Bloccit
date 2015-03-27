@@ -27,6 +27,7 @@ gem 'faker'
 gem 'devise'
 gem 'pundit'
 gem 'redcarpet'
+gem 'will_paginate'
 gem 'figaro', '1.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
