@@ -36,7 +36,7 @@ posts = Post.all
 
 1000.times do
 	Comment.create!(
-    #user: users.sample, NOT YET ASSOCIATED
+    user: users.sample,
 		post: posts.sample,
 		body: Faker::Lorem.paragraph
 		)
