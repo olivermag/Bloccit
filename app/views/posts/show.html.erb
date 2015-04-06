@@ -9,7 +9,11 @@
    	<%= render @comments %>
    <% end %>
 
+
+   <% if current_user != nil %>
+
    <%= render partial: 'comments/form', locals: { topic: @topic, post: @post } %>
+   <% end %>
 
   </div>
   <div class="col-md-4">
