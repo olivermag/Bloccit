@@ -15,13 +15,13 @@ describe Post do
 			end
 		end
 
-		describle '#down_votes' do
+		describe '#down_votes' do
 			it "counts the number of votes with the value = -1" do
 				expect( @post.down_votes ).to eq(2)
 			end
 		end
 
-		describle '#points' do
+		describe '#points' do
 			it "returns the sum of down and up votes" do
 				expect( @post.points ).to eq(1) # 3 - 2
 			end
